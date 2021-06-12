@@ -6,16 +6,48 @@
     box-sizing: border-box;
 }
 
+/*stick when scroll*/ 
+#navbar {
+    overflow: hidden;
+    background-color: rgb(253, 253, 253);
+  }
+
+
+.content {
+    padding: 16px;
+  } 
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
 html,
 body{
-    background-color: rgb(255, 255, 255);
     
-    color :#555;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)),  url(img/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+
+
+    color :rgb(255, 254, 254);
     font-family: 'Cairo','Tajawal','Amiri' ;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
+    align-items: center;
+    opacity: 0.9;
 }
 .clearfix {zoom: 1;}
 .clearfix:after {
@@ -58,7 +90,7 @@ h1{
      padding: 20px;
  }
  h2{
-     background-color: rgba(173, 216, 230, 0.466);
+     background-color: rgb(1, 25, 34);
      padding: 20px;
  }
  
@@ -75,8 +107,11 @@ h1{
 
  /*Logo*/
 .logo{
-    padding-left: 35%;
-    margin-bottom: 0%;
+    
+    
+    
+   position: relative;
+
 }
 
 /*header*/
@@ -109,8 +144,8 @@ header{
 
 
 /*home-photo*/
-.home-photo{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)),  url(img/cover.jpg);
+.home-photo {
+    /*background-image:   url(img/logo.jpg); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -181,10 +216,63 @@ cite img {
 
 }
 
-/*section enter*/
-.section-enter{
+/*sectioon contact*/
+.contact-info{
+    color:#fff;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    float: right;
 
 }
+.contact-form{
+    text-align: center;
+}
+
+.contact-form .text-box{
+    background: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0, 0, 0.1);
+    padding: 12px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    margin-top: 10px;
+    
+
+
+}
+
+.contact-form textarea{
+    background: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0, 0, 0.1);
+    opacity: 0.9;
+
+
+
+}
+
+.contact-form .send-btn{
+    background: #2E94E3;
+    border-radius: 5px ;
+    border: none;
+    width : 120px;
+    height: 40px;
+    transition: 0.3s;
+    cursor: pointer;
+    
+}
+
+.contact-form .send-btn:hover{
+    background: #0582E3;
+}
+
+
+
 
 
 /*footer*/

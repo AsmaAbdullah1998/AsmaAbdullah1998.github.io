@@ -12,7 +12,8 @@
    <link rel="preconnect" href="https://fonts.gstatic.com"> 
    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
-
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>الرئيسية</title>
    <meta charset="utf_8">
@@ -22,20 +23,20 @@
 
     <!--LOGO-->
    
-        <div class = "row" >
-            <img  src="resources/css/img/logo.jpg" alt ="logo" class="logo" > 
-        </div>
+       
+            
+       
 
 
     <!--HEADER-->
     <header >
        
-       <div class="banner ">
+       <div class="banner" id = "navbar">
         
            <div class = "row">
                <ul>
 
-                <li><a class = "btn btn-one" href="#">    التواصل</a></li>
+                <li><a class = "btn btn-one" href="#contact">    التواصل</a></li>
                 
                 
 
@@ -44,9 +45,9 @@
                 
                     
                 <li><a class = "btn btn-five " href="#">    البرامج الإثرائية</a></li>
-                <li><a class = "btn btn-four"  href="#">      التوظيف</a></li>
+                <!--<li><a class = "btn btn-four"  href="#">      التوظيف</a></li>-->
                 <li><a class = "btn btn-three" href="#">    القبول و التسجيل</a></li>
-                <li><a class = "btn btn-two" href="about.html">    حول المدرسة</a></li>
+                <li><a class = "btn btn-two" href="#about">    حول المدرسة</a></li>
                 <li> <a class = "btn btn-seven " href="#">   الرئيسية</a></li>
             
                </ul>
@@ -56,13 +57,17 @@
 
     </header>
 
+
+    <div class = "content">
+
+   
     
     <div class="home-photo"></div>
 
     <!-------------------SECTIONS---------------------->
 
     <!--SECTION ABDULLAH-->
-    <section class="section-abdullah">
+    <section class="section-abdullah" id = "ourVision">
         <div class = "row">
 
             <div class = "col span-4-of-4">
@@ -85,7 +90,7 @@
 
     <!--NICE WORDS-->
 
-    <section class="section-niceWords">
+    <section class="section-niceWords" id = "ourMessages">
         <div class="row">
             <h2  >رسالتنا </h2>
         </div>
@@ -116,18 +121,35 @@
         </div>
     </section>
 
+    
+
+
+    <!--SECTIION ABOUT-->
+    <section class = "section-about" id = "about"> 
+        <div class="row">
+            <h2>
+                حول المدرسة
+            </h2>
+
+            <p>إزضمن جودة مخرجاتها. ونسأل الله إزضمن جودة مخرجاتها. ونسأل الله إزضمن جودة مخرجاتها. ونسأل الله إزضمن جودة مخرجاتها. ونسألإزضمن جودة مخرجاتها. ونسأل الله إزضمن جودة مخرجاتها. ونسأل الله إزضمن جودة مخرجاتها. ونسأل الله إزضمن جودة مخرجاتها. ونسأل الله إزضمن جودة مخرجاتها. ونسأل الله  إزضمن جودة مخرجاتها. ونسأل الله  إزضمن جودة مخرجاتها. ونسأل الله  إزضمن جودة مخرجاتها. ونسأل الله  الله </p>
+
+            
+
+        </div>
+
+    </section>
+
     <!--SECTION VIDEOW-->
     <section class = "section-video">
 
         <div class="row ">
-            <iframe  width="100%" height = "700"  allowfullscreen="allowfullscreen"  src="https://www.youtube.com/embed/Qfd0cWW7ASU?autoplay=1&mute=1" >
+            <iframe  width="100%" height = "700"  allowfullscreen="allowfullscreen"  src="https://www.youtube.com/embed/Qfd0cWW7ASU?autoplay=0&mute=1" >
             </iframe>
         </div>
     </section>
-
     <!--SECTION NEWS-->
 
-    <section class="section-news">
+    <section class="section-news" id = "news">
         <div class = "row">
             <h2 >آخر الأخبار</h2>
         </div>
@@ -149,74 +171,62 @@
 
     </section>
 
-    <!--SECTION ENTER-->
+    <!--SECTION CONTACT-->
 
-    <!--
+    
 
-        <section class = "section-enter js--section-enter">
-        <div class = "row">
-            <h2 >الدخول</h2>
-        </div>
-        <div class = "row">
+    <section class = "section-contact" id = "contact">
+        <div class = "row"> 
+            <h2>
+                التواصل 
+            </h2>
 
+            <div class = "contact-info">
 
-            <div class="col span-1-of-3">
-                <div >
-                    <div>
-                        <a href = "#" class = "btn"><h3>طالب</h3></a>
-                        
-                    </div>
-                    
-                    
-                    
-                </div>
+                <div><i class="fas fa-map-marker-alt"></i> Jeddah city, KSA</div>
+                <div><i class="fas fa-envelope"></i> contact@gmail.com</div>
+                <div><i class="fas fa-phone"></i> +000 000 000000</div>
+                <div><i class="fas fa-clock"></i> Mon-Fri 8:00 AM to 5:00 PM</div>
             </div>
 
-            <div class="col span-1-of-3">
-                <div >
-                    <div>
-                        <a href = "#" class = "btn"><h3>ولي أمر</h3></a>
-                        
-                    </div>
+            <div class = "contact-form">
+                <form class = "contact"  action="index.php" method = "POST">
                     
-                    
-                    
-                </div>
-            </div>
+                    <input type="text" name = "name" class = "text-box" placeholder="الاسم" required> <br>
+                    <input type="email" name = "email" class = "text-box" placeholder="الإيميل" required> <br>
+                    <textarea name="message" id="" cols="40" rows="5" placeholder="رسالتك" required></textarea><br>
+                    <input type="submit" name = "submit" class = "send-btn" value="ارسل">
 
-            <div class="col span-1-of-3">
-                <div >
-                    <div>
-                        <a href = "#" class = "btn"><h3>موظف</h3></a>
-                        
-                    </div>
+
                     
                     
-                    
-                </div>
+
+                </form>
+
+
             </div>
 
 
 
         </div>
+
+        
+
 
 
     </section>
 
-    -->
-    
-
-
+   
     <!--FOOTER-->
     <footer>
         <div class="row">
             <div class="col span-2-of-2">
                 <ul class="footer-nav">
                     <li><a href="#">معلومات التسجيل</a></li>
-                    <li><a href="#">آخر الأخبار</a></li>
-                    <li><a href="#">رسالتنا</a></li>
-                    <li><a href="#">رؤيتنا</a></li>
-                    <li><a href="#">من نحن</a></li>
+                    <li><a href="#news">آخر الأخبار</a></li>
+                    <li><a href="#ourMessages">رسالتنا</a></li>
+                    <li><a href="#ourVision">رؤيتنا</a></li>
+                    <li><a href="#about">من نحن</a></li>
                 </ul>
             </div>
             
@@ -231,6 +241,8 @@
         </div>
     </footer>
 
+
+   </div>
 
 
 
