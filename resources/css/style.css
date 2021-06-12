@@ -1,0 +1,289 @@
+
+/*Basic setup*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    background-color: rgb(255, 255, 255);
+    
+    color :#555;
+    font-family: 'Cairo','Tajawal','Amiri' ;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/*components*/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+    clear:both;
+    margin: 0px;
+
+}
+
+
+
+/*---HEADINGS------*/
+h1{
+   
+    transform: translate(30%, 90%);
+    color: #fff;
+    font-size: 150%;
+    
+ }
+ 
+ h2, h3{
+     
+     margin-top: 0%;
+     text-align: center;
+     padding: 20px;
+ }
+ h2{
+     background-color: rgba(173, 216, 230, 0.466);
+     padding: 20px;
+ }
+ 
+ 
+ p{
+     text-align: right;
+     border:1px solid #555;
+     padding: 15px;
+     margin-top: 15px;
+     border-bottom: 13px rgba(85, 85, 85, 0.685) solid;
+     
+ }
+
+
+ /*Logo*/
+.logo{
+    padding-left: 35%;
+    margin-bottom: 0%;
+}
+
+/*header*/
+header{
+    
+    background-color: rgba(173, 216, 230, 0.466);
+    
+    height: 10vh;
+    background-size: contain;
+    position: absoute;
+   
+
+}
+.banner{
+    position:center;
+    /*transform: translate(30%, 50%);*/
+    text-align: center;
+    font-size:1.5vw;
+}
+
+.row ul li{
+    list-style: none;
+    display: inline-block;
+    margin:0 15px;
+    position: relative;
+
+}
+
+
+
+
+/*home-photo*/
+.home-photo{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)),  url(img/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    height: 50vh;
+}
+
+
+/* -------------------------*/
+/*Sections*/
+/*--------------------------*/
+
+/*-section-abdullah-*/
+.section-abdullah{
+
+}
+.photo-abdullah {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border: 3px inset rgba(67, 57, 68, 0.582);
+  }
+
+  /*Section Nice words*/
+  .section-niceWords{
+
+  }
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+    
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+/*Section Video*/
+.section-video{
+
+}
+
+/*Section News*/
+.section-news{
+
+}
+
+/*section enter*/
+.section-enter{
+
+}
+
+
+/*footer*/
+footer {
+    background-color: lightblue;
+    padding: 5px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: right;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited, 
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: rgb(143, 30, 143);
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: rgb(14, 1, 1);
+}
+
+
+
+footer p {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+/* -------------------------*/
+/*Buttons*/
+/*--------------------------*/
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 13px 13px;
+    font-weight: 30;
+    text-decoration: none;
+    
+    color: rgb(10, 52, 116);
+   
+    position: relative;
+    
+}
+
+.btn:hover,
+.btn:active{
+    border-bottom: 2px solid rgb(124, 23, 90);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
